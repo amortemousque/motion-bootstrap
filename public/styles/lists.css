@@ -1,0 +1,11 @@
+.list-italics {
+  font-style: italic;
+  text-align: left; }
+
+.list-xl li {
+  font-size: 1.3em; }
+
+.list-xl li + li {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=lists.css.map */

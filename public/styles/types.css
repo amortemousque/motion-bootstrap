@@ -1,0 +1,14 @@
+a {
+  text-transform: uppercase; }
+
+.text-white {
+  color: #efefef; }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .absolute-md-up {
+    position: absolute; } }
+@media screen and (min-width: 1200px) {
+  .absolute-md-up {
+    position: absolute; } }
+
+/*# sourceMappingURL=types.css.map */

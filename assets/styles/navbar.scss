@@ -1,0 +1,37 @@
+.navbar-primary {
+  padding: 20px 0px 20px 0px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  z-index: 105;
+  .nav-link {
+    padding: 13px;
+  }
+}
+
+.navbar-nav-dark {
+  background-color: #292b2c!important;
+}
+
+.nav-link-light {
+  color:#fff;
+}
+
+.nav-link-light:hover, .nav-link-light:visited {
+  color:#fff;
+}
+
+.nav-link-dark {
+  color:#000;
+}
+
+.nav-link-dark:hover, .nav-link-dark:visited {
+  color:#000;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:visited   {
+  color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

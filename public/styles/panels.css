@@ -1,0 +1,38 @@
+.panel-primary {
+  background-color: #000;
+  margin-top: 0px; }
+  .panel-primary .panel-header {
+    color: #fff;
+    padding: 30px; }
+  .panel-primary .panel-content {
+    padding: 30px; }
+  .panel-primary .panel-footer {
+    padding: 5px 10px 20px 10px; }
+
+.panel-editorial {
+  margin-top: 0px; }
+  .panel-editorial .panel-title.title-line::before {
+    content: "";
+    position: absolute;
+    margin-left: -84px;
+    margin-top: 23px;
+    display: block;
+    border-top: 2px solid #000;
+    width: 70px; }
+  .panel-editorial .panel-header {
+    padding: 30px 10px 0px 30px; }
+  .panel-editorial .panel-content {
+    padding: 10px 30px 30px 30px; }
+  .panel-editorial .panel-footer {
+    padding: 5px 10px 20px 30px; }
+  .panel-editorial .content-crushed {
+    margin-right: 15%; }
+
+.panel-editorial .panel-align-left .panel-header, .panel-editorial .panel-align-left .panel-content {
+  padding-left: 0px; }
+
+.panel-editorial .panel-align-right .panel-header, .panel-editorial .panel-align-right .panel-content, .panel-editorial .panel-align-right .panel-footer {
+  padding-right: 0px;
+  padding-left: 70px; }
+
+/*# sourceMappingURL=panels.css.map */

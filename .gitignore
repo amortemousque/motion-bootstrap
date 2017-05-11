@@ -1,0 +1,18 @@
+# ignore all files that start with ~
+~*
+
+# ignore Editor files
+*.buildpath
+*.project
+*.vscode
+*.sublime-project
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.sass-cache
+
+# ignore log files
+*.log
+
+# ignore node/grunt dependency directories
+node_modules/

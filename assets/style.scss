@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'styles/navbar';
+@import 'styles/navs';
+@import 'styles/layouts';
+@import 'styles/blockquote';
+@import 'styles/buttons';
+@import 'styles/panels';
+@import 'styles/types';
+@import 'styles/blocks';
+@import 'styles/lists';
+@import 'styles/headers';
+@import 'styles/transitions';
+@import 'styles/forms';
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+
+
+
+.painting-wrapper {
+    position: absolute;
+    overflow:hidden;
+    height: calc(100% - 85px - 50px);
+    min-height: 300px;
+    z-index: 1;
+    left:-100%;
+    right:-100%;
+    .painting {
+      width:100%;
+      position: absolute; 
+      top:0;
+      bottom:0;
+      // left:-100%;
+      // right:-100%;
+      margin: auto;
+      //position: absolute;
+    }
+}
+
+ @media screen and (orientation:portrait) {
+    .painting-wrapper {
+          max-height: 445px;
+    }
+ }
+
+.above-transition, .above-transition * {
+  position: relative;
+  z-index: 3;
+}
+
+//  .painting-home {
+//    height: calc(100% - 85px - 50px);
+//    width: 100%;
+//    position: relative;
+//  }
+

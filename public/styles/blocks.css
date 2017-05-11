@@ -1,0 +1,37 @@
+.block-img .block-content img {
+  position: relative;
+  z-index: 100; }
+
+.block-letter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26em;
+  position: absolute;
+  line-height: 300px;
+  color: #000; }
+
+.block-letter.letter-left {
+  top: -113px;
+  left: -54px; }
+
+.block-letter.letter-right {
+  top: -113px;
+  right: -54px; }
+
+.block-shift {
+  padding: 70px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin-right: 60px; }
+
+.block-break {
+  padding: 10% 10%;
+  background-color: #000;
+  color: #fff;
+  text-align: center; }
+  .block-break .block-separator {
+    margin: 40px auto;
+    border-top: 2px solid #fff;
+    width: 90px; }
+
+/*# sourceMappingURL=blocks.css.map */
