@@ -4,10 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <base href="/">
-  <title>Universal Test</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <title>Single</title>
+  <link href="/assets/styles/vendor/bootstrap.min.css" rel="stylesheet">
   <link href="public/style.css" rel="stylesheet">
-
 
 </head>
 <body>

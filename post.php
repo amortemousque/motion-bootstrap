@@ -4,19 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <base href="/">
-  <title>Universal Test</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <title>Post</title>
+  <link href="/assets/styles/vendor/bootstrap.min.css" rel="stylesheet">
   <link href="public/style.css" rel="stylesheet">
-
 
 </head>
 <body>
 
     <?php
-    include("navbar.php");
+        include("navbar.php");
     ?>
-
-   
 
     <div id="barba-wrapper">
         <div class="barba-container">
@@ -49,18 +46,36 @@
                     </div>
                 </article>  
             </section>
+
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script src="/assets/scripts/barba.min.js"></script>
-    <script src="/assets/scripts/gsap-then.js"></script>
+
+    <script src="/assets/scripts/vendor/jquery.min.js"></script>
+    <script src="/assets/scripts/vendor/tether.js"></script>
+
+    <script src="/assets/scripts/vendor/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/vendor/modernizr.js"></script>
+    <script src="/assets/scripts/vendor/TweenMax.min.js"></script>
+    <script src="/assets/scripts/vendor/ScrollMagic.min.js"></script>
+    <script src="/assets/scripts/vendor/animation.gsap.js"></script>
+    <script src="/assets/scripts/vendor/TextPlugin.min.js"></script>
+    <script src="/assets/scripts/vendor/ScrollToPlugin.min.js"></script>
+    <script src="/assets/scripts/vendor/debug.addIndicators.js"></script>
+
+
+    <script src="/assets/scripts/vendor/barba.min.js"></script>
+    <script src="/assets/scripts/vendor/gsap-then.js"></script>
+
+
+    <script src="/assets/scripts/animations/block.animation.js"></script>
+    <script src="/assets/scripts/animations/panel.animation.js"></script>
+    <script src="/assets/scripts/animations/slide-in.animation.js"></script>
+    <script src="/assets/scripts/animations/slide-out.animation.js"></script>
 
     <script src="/assets/scripts/transition.js"></script>
-    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/scrolling.js"></script>
+
 </body>
 </html>
 

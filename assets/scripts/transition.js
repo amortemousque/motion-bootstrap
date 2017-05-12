@@ -35,6 +35,13 @@ var SlideTransition = Barba.BaseTransition.extend({
 });
 
 
+
+Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+  var js = container.querySelector("script");
+  if(js != null){
+      eval(js.innerHTML);
+  }
+});
 /**
  * Next step, you have to tell Barba to use the new Transition
  */
