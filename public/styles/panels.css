@@ -28,10 +28,13 @@
   .panel-editorial .content-crushed {
     margin-right: 15%; }
 
-.panel-editorial .panel-align-left .panel-header, .panel-editorial .panel-align-left .panel-content {
+.squiz-left {
+  margin-right: 30px; }
+
+.panel-editorial.panel-align-left .panel-header, .panel-editorial.panel-align-left .panel-content {
   padding-left: 0px; }
 
-.panel-editorial .panel-align-right .panel-header, .panel-editorial .panel-align-right .panel-content, .panel-editorial .panel-align-right .panel-footer {
+.panel-editorial.panel-align-right .panel-header, .panel-editorial.panel-align-right .panel-content, .panel-editorial.panel-align-right .panel-footer {
   padding-right: 0px;
   padding-left: 70px; }
 

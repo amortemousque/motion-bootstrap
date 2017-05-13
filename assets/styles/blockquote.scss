@@ -16,26 +16,24 @@ blockquote {
 
 }
 
-.quote-start::before {
-    content: "\201C"; /*Unicode for Left Double Quote*/
+blockquote p::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
 
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
+  font-size: 0.5em;
   font-weight: bold;
-
+  vertical-align: top;
+  margin-right: 10px;
 }
-.quote-end::before {
-    content: "\201D"; /*Unicode for Left Double Quote*/
-
+blockquote p::after {
+  content: "\201D"; /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
+  font-size: 0.5em;
   font-weight: bold;
-}
-
-.blockquote-white {
-  color: #fff;
+  vertical-align: bottom;
+  margin-left: 0px;
 }
 
 blockquote a:hover{
@@ -47,17 +45,29 @@ blockquote em{
 }
 
 
-.blockquote-container {
+.blockquote {
   overflow: hidden;
-  .blockquote-white {
-    color: #fff;
-    font-size: 3em;
-    text-align:center;
-
-  }
-  .blockquote-author {
-    color: #fff;
+  border-left: none;
+  .blockquote-footer {
     width: 100%;
     text-align: right;
+  }
+
+  .blockquote-footer::before {
+      content: " ";
+      border-left: 1px solid #222;
+      height: 30px;
+      margin-left: -10px;
+      position: absolute;
+  }
+}
+
+.blockquote-primary {
+   * {
+     color: #fff;
+   }
+
+  .blockquote-footer::before {
+      border-left: 1px solid #fff;
   }
 }

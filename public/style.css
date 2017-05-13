@@ -34,27 +34,25 @@
   right: 0px; }
 
 .section-fullscreen.one {
-  min-height: 450px;
-  margin-bottom: -85px; }
-  .section-fullscreen.one .blockquote-container {
+  min-height: 450px; }
+  .section-fullscreen.one .blockquote {
     margin-top: -85px; }
+
+.section {
+  margin-bottom: 130px; }
+
+.push-top {
+  margin-top: 70px; }
 
 .section-fullscreen {
   height: 100%; }
 
 .section-overflow {
   position: relative;
-  overflow: hidden;
-  margin: 130px 0px; }
+  overflow: hidden; }
 
-.section-default {
-  padding: 130px 0px; }
-
-.section-default {
-  padding-bottom: 0px; }
-
-.section-letter-shift {
-  margin-top: 50px; }
+section:last-child {
+  margin-bottom: 0px; }
 
 .container-table {
   display: table;
@@ -80,24 +78,25 @@ blockquote {
   color: #666;
   text-align: justify; }
 
-.quote-start::before {
+blockquote p::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
-  font-weight: bold; }
+  font-size: 0.5em;
+  font-weight: bold;
+  vertical-align: top;
+  margin-right: 10px; }
 
-.quote-end::before {
+blockquote p::after {
   content: "\201D";
   /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
-  font-weight: bold; }
-
-.blockquote-white {
-  color: #fff; }
+  font-size: 0.5em;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin-left: 0px; }
 
 blockquote a:hover {
   color: #666; }
@@ -105,16 +104,23 @@ blockquote a:hover {
 blockquote em {
   font-style: italic; }
 
-.blockquote-container {
-  overflow: hidden; }
-  .blockquote-container .blockquote-white {
-    color: #fff;
-    font-size: 3em;
-    text-align: center; }
-  .blockquote-container .blockquote-author {
-    color: #fff;
+.blockquote {
+  overflow: hidden;
+  border-left: none; }
+  .blockquote .blockquote-footer {
     width: 100%;
     text-align: right; }
+  .blockquote .blockquote-footer::before {
+    content: " ";
+    border-left: 1px solid #222;
+    height: 30px;
+    margin-left: -10px;
+    position: absolute; }
+
+.blockquote-primary * {
+  color: #fff; }
+.blockquote-primary .blockquote-footer::before {
+  border-left: 1px solid #fff; }
 
 .btn-primary {
   border: 1px solid #000;
@@ -193,10 +199,13 @@ blockquote em {
   .panel-editorial .content-crushed {
     margin-right: 15%; }
 
-.panel-editorial .panel-align-left .panel-header, .panel-editorial .panel-align-left .panel-content {
+.squiz-left {
+  margin-right: 30px; }
+
+.panel-editorial.panel-align-left .panel-header, .panel-editorial.panel-align-left .panel-content {
   padding-left: 0px; }
 
-.panel-editorial .panel-align-right .panel-header, .panel-editorial .panel-align-right .panel-content, .panel-editorial .panel-align-right .panel-footer {
+.panel-editorial.panel-align-right .panel-header, .panel-editorial.panel-align-right .panel-content, .panel-editorial.panel-align-right .panel-footer {
   padding-right: 0px;
   padding-left: 70px; }
 
@@ -215,20 +224,22 @@ a {
 .block-img .block-content img {
   position: relative;
   z-index: 100; }
+.block-img .block-letter {
+  top: -110px; }
 
 .block-letter {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26em;
   position: absolute;
-  line-height: 300px;
-  color: #000; }
+  line-height: 309px;
+  color: #000;
+  z-index: -1;
+  top: 0px; }
 
 .block-letter.letter-left {
-  top: -113px;
   left: -54px; }
 
 .block-letter.letter-right {
-  top: -113px;
   right: -54px; }
 
 .block-shift {
@@ -236,7 +247,8 @@ a {
   background-color: #000;
   color: #fff;
   display: inline-block;
-  margin-right: 60px; }
+  margin-right: 60px;
+  margin-top: 83px; }
 
 .block-break {
   padding: 10% 10%;
@@ -333,5 +345,10 @@ article {
 .above-transition, .above-transition * {
   position: relative;
   z-index: 3; }
+
+.highlight {
+  padding: 1rem;
+  margin: 1rem -15px;
+  background-color: #f7f7f9; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,9 @@
         position: relative;
         z-index: 100;
     }
+    .block-letter {
+        top: -110px;
+    }
 }
 
 
@@ -10,16 +13,16 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26em;
     position: absolute;
-    line-height: 300px;
+    line-height: 309px;
     color:#000;
+    z-index: -1;
+    top: 0px;
 }
 
 .block-letter.letter-left {
-    top: -113px;
     left: -54px;
 }
 .block-letter.letter-right {
-    top: -113px;
     right: -54px;
 }
 
@@ -29,12 +32,7 @@
     color:#fff;
     display: inline-block;
     margin-right: 60px;
-    .block-letter {
-
-    }
-    .block-content {
-
-    }
+    margin-top: 83px;
 }
 
 .block-break {
@@ -49,7 +47,4 @@
         width: 90px;     
     }
 
-    .block-title {
-
-    }
 }
