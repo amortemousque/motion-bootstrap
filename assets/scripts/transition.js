@@ -28,6 +28,9 @@ var SlideTransition = Barba.BaseTransition.extend({
              window.transitionElementStart = window.transitionElementEnd;
              bindTransitionLink();
              bindAnimations();
+
+             parseCode();
+
             _this.done();
           });
       });
@@ -72,5 +75,3 @@ function bindTransitionLink() {
 }
 
 bindTransitionLink();
-
-

@@ -14,7 +14,7 @@
           <a class="nav-link nav-link-dark" href="/post.php" >Savoir faire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-dark" >La communauté</a>
+          <a class="nav-link nav-link-dark" href="/components.php" >Composants</a>
         </li>
       </ul>
       <ul class="navbar-nav mr-auto js-navbar-animate-right">

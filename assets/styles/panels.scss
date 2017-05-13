@@ -26,6 +26,7 @@
     border-top: 2px solid #000;
     width: 70px;
   }
+
   .panel-header {
     padding: 30px 10px 0px 30px;
   }
@@ -35,18 +36,25 @@
   .panel-footer {
     padding: 5px 10px 20px 30px;
   }
+
   .content-crushed {
     margin-right: 15%;
   }
 }
 
-.panel-editorial .panel-align-left {
+
+.squiz-left {
+  margin-right: 30px;
+}
+
+
+.panel-editorial.panel-align-left {
   .panel-header, .panel-content {
     padding-left: 0px;
   }
 }
 
-.panel-editorial .panel-align-right {
+.panel-editorial.panel-align-right {
   .panel-header, .panel-content, .panel-footer {
     padding-right: 0px;
     padding-left: 70px;

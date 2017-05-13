@@ -10,24 +10,25 @@ blockquote {
   color: #666;
   text-align: justify; }
 
-.quote-start::before {
+blockquote p::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
-  font-weight: bold; }
+  font-size: 0.5em;
+  font-weight: bold;
+  vertical-align: top;
+  margin-right: 10px; }
 
-.quote-end::before {
+blockquote p::after {
   content: "\201D";
   /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 40px;
-  font-weight: bold; }
-
-.blockquote-white {
-  color: #fff; }
+  font-size: 0.5em;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin-left: 0px; }
 
 blockquote a:hover {
   color: #666; }
@@ -35,15 +36,22 @@ blockquote a:hover {
 blockquote em {
   font-style: italic; }
 
-.blockquote-container {
-  overflow: hidden; }
-  .blockquote-container .blockquote-white {
-    color: #fff;
-    font-size: 3em;
-    text-align: center; }
-  .blockquote-container .blockquote-author {
-    color: #fff;
+.blockquote {
+  overflow: hidden;
+  border-left: none; }
+  .blockquote .blockquote-footer {
     width: 100%;
     text-align: right; }
+  .blockquote .blockquote-footer::before {
+    content: " ";
+    border-left: 1px solid #222;
+    height: 30px;
+    margin-left: -10px;
+    position: absolute; }
+
+.blockquote-primary * {
+  color: #fff; }
+.blockquote-primary .blockquote-footer::before {
+  border-left: 1px solid #fff; }
 
 /*# sourceMappingURL=blockquote.css.map */

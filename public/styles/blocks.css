@@ -1,20 +1,22 @@
 .block-img .block-content img {
   position: relative;
   z-index: 100; }
+.block-img .block-letter {
+  top: -110px; }
 
 .block-letter {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26em;
   position: absolute;
-  line-height: 300px;
-  color: #000; }
+  line-height: 309px;
+  color: #000;
+  z-index: -1;
+  top: 0px; }
 
 .block-letter.letter-left {
-  top: -113px;
   left: -54px; }
 
 .block-letter.letter-right {
-  top: -113px;
   right: -54px; }
 
 .block-shift {
@@ -22,7 +24,8 @@
   background-color: #000;
   color: #fff;
   display: inline-block;
-  margin-right: 60px; }
+  margin-right: 60px;
+  margin-top: 83px; }
 
 .block-break {
   padding: 10% 10%;

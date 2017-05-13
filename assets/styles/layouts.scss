@@ -1,13 +1,18 @@
 
 .section-fullscreen.one {
   min-height: 450px;
-  margin-bottom: -85px;
-  .blockquote-container {
+  .blockquote {
     margin-top: -85px;
   }
 }
 
+.section {
+  margin-bottom: 130px;
+}
 
+.push-top {
+  margin-top: 70px;
+}
 
 .section-fullscreen {
   height: 100%;
@@ -16,20 +21,12 @@
 .section-overflow {
     position: relative;
     overflow: hidden;
-    margin: 130px 0px;
 }
 
-.section-default {
-  padding: 130px 0px;
+section:last-child {
+  margin-bottom:0px;
 }
 
-.section-default {
-  padding-bottom: 0px;
-}
-
-.section-letter-shift {
-  margin-top: 50px;
-}
 
 .container-table {
   display: table;
